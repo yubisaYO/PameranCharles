@@ -5,7 +5,9 @@ const Portofolio = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.selectTitle}>Choose a gallery</h1>
-      <div className={styles.items}>
+      <div
+        className={`${styles.items} flex flex-col gap-[20px] items-center md:items-start md:flex-row md:gap-[50px]`}
+      >
         <Link href="/portofolio/illustrations" className={styles.item}>
           <span className={styles.title}>Illustrations</span>
         </Link>

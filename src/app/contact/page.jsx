@@ -3,10 +3,10 @@ import Image from "next/image";
 import styles from "./page.module.css";
 function Contact() {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} mb-[100px]`}>
       <h1 className={styles.title}>Let's Keep in Touch</h1>
-      <div className={styles.content}>
-        <div className={styles.imgContainer}>
+      <div className={`${styles.content} lg:flex`}>
+        <div className={`${styles.imgContainer} hidden lg:block`}>
           <Image
             src="/contact.png"
             alt=""

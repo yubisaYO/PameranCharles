@@ -4,9 +4,14 @@ import Hero from "public/hero.png";
 import styles from "./page.module.css";
 
 function page() {
+  // display: flex;
+  // align-items: center;
+  // gap: 100px;
   return (
-    <div className={styles.container}>
-      <div className={styles.item}>
+    <div
+      className={`flex flex-col md:flex-row items-center gap-[20px] md:gap-[100px] text-center md:text-left`}
+    >
+      <div className={`${styles.item} order-2 md:order-1 mb-10`}>
         <h1 className={`text-6xl ${styles.title}`}>
           Better design for your digital products.
         </h1>
@@ -16,7 +21,7 @@ function page() {
         </p>
         <Button url="/portofolio" text="See Our Works" />
       </div>
-      <div className={styles.item}>
+      <div className={`${styles.item} order-1 md:order-2`}>
         <Image src={Hero} alt="" className={styles.img} />
       </div>
     </div>
