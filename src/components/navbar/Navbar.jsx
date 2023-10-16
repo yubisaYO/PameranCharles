@@ -28,8 +28,10 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className={styles.container}>
-      <Link href="/" className={styles.logo}>
+    <div
+      className={`${styles.container} flex justify-center sm:justify-between`}
+    >
+      <Link href="/" className={`${styles.logo} hidden sm:block`}>
         CHARLES
       </Link>
       <div className={styles.links}>

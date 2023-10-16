@@ -19,7 +19,7 @@ const About = () => {
           </h2>
         </div>
       </div>
-      <div className={styles.textContainer}>
+      <div className={`${styles.textContainer} sm:flex mb-[100px]`}>
         <div className={styles.item}>
           <h1 className={styles.title}>Who Are We?</h1>
           <p className={styles.desc}>
